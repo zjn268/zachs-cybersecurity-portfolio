@@ -22,7 +22,7 @@ Prior to starting the BACS program at SANS technology institute I did not know t
 
 
 ## Python Script for Brute Force
-
+'''
 import subprocess
 
 lst = []
@@ -41,5 +41,5 @@ for password in lst:
         )
         psk.append(psk_string)
 
-
+'''
 This script compares a known string vs a generated one using various variables this allows me to reverse a wifi password from the PSK.
