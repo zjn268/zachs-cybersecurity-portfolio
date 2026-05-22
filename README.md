@@ -22,7 +22,7 @@ Prior to starting the BACS program at SANS technology institute I did not know t
 
 
 ## Python Script for Brute Force
-'''
+
 import subprocess
 
 lst = []
@@ -30,16 +30,15 @@ lst = []
 f = open('file.txt', 'r', encoding='latin-1')
 
 for i in f:
-    lst.append(i.strip())
+     lst.append(i.strip())
 
 psk = []
 
 for password in lst:
-    for ssid in ["hotel-wifi", "university-guest", "corporate-iot"]:
-        psk_string = subprocess.run(
-            ["wpa_passphrase", ssid, password]
-        )
-        psk.append(psk_string)
+     for ssid in ["hotel-wifi", "university-guest", "corporate-iot"]:
+          psk_string = subprocess.run(
+                ["wpa_passphrase", ssid, password])
+          psk.append(psk_string)
 
-'''
+
 This script compares a known string vs a generated one using various variables this allows me to reverse a wifi password from the PSK.
