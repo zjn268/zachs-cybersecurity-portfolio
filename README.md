@@ -4,16 +4,16 @@ I have worked in information technology since I first started volunteering at a 
 
 # National Cyber League Experience
 
-### NCL Spring 2026 Team Game
+### NCL Spring 2026 Team Game Scouting Report
 http://cyberskyline.com/report/K5H4VATH7NLD
 
-### NCL Spring 2026 Individual Game
+### NCL Spring 2026 Individual Game Scouting Report
 http://cyberskyline.com/report/9GNJV3FVWP6Q
 
-### NCL Spring 2025 Team Game
+### NCL Spring 2025 Team Game Scouting Report
 http://cyberskyline.com/report/CVNUBQDPXJT0
 
-### NCL Spring 2025 Individual Game
+### NCL Spring 2025 Individual Game Scouting Report
 http://cyberskyline.com/report/5DAQM8QP59BU
 
 ## My CTF Experience
