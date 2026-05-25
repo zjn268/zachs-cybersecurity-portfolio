@@ -21,24 +21,64 @@ http://cyberskyline.com/report/5DAQM8QP59BU
 Prior to starting the BACS program at SANS technology institute I did not know that CTFs existed. The first year that I competed back in 2025 I placed well over all. However, it was a struggle from the start to the finish. This year in 2026 the only difficult part of each problem was identify what the problem was truly asking for. I was able to complete more across each category at a quicker pace than before. I leveraged python and bash to automate brute forcing of passwords to access encrypted data. I leveraged CVE databases to identify vulnerable binaries ripe for explotation. Allowing me to escalate to root and grab the flag. I also pushed myself harder than ever before with web exploitation. I was able to leverage various kali linux binaries, burpsuite, and the web browser dev tools to access locations that should have been inaccessible.
 
 
-## Python Script for Brute Force
+## Capture the Flag (CTF) Experience & Cybersecurity Demonstrated and Applied Skills
 
-import subprocess
+### National Cyber League (NCL) Spring 2026 Individual Game
 
-lst = []
+Participated in the National Cyber League (NCL) Spring 2026 cybersecurity competition hosted by Cyber Skyline. Competed against more than 7,000 students nationwide in hands-on cybersecurity challenges involving real-world offensive and defensive security scenarios.
 
-f = open('file.txt', 'r', encoding='latin-1')
+**Overall Performance**
 
-for i in f:
-     lst.append(i.strip())
+* National Rank: 600 / 7010
+* Percentile: 92nd
+* Accuracy: 72.9%
+* Completion Rate: 80%
 
-psk = []
+### Demonstrated Technical Skills
 
-for password in lst:
-     for ssid in ["hotel-wifi", "university-guest", "corporate-iot"]:
-          psk_string = subprocess.run(
-                ["wpa_passphrase", ssid, password])
-          psk.append(psk_string)
+#### Scanning & Reconnaissance — 96th Percentile
+
+* Performed DNS enumeration and infrastructure discovery
+* Conducted service scanning and remote host reconnaissance
+* Enumerated mail services and authenticated IMAP access
+
+#### Password Cracking — 94th Percentile
+
+* Used Hashcat and rainbow tables to crack password hashes
+* Worked with MD5, SHA1, SHA256, NTLM, ZIP, and BitLocker challenges
+* Applied password auditing and recovery techniques
+
+#### Digital Forensics — 93rd Percentile
+
+* Recovered hidden and deleted artifacts from binary/image files
+* Conducted memory and process dump analysis
+* Investigated indicators of compromise (IoCs)
+
+#### Web Application Exploitation
+
+* Identified and exploited IDOR vulnerabilities
+* Analyzed SQL injection scenarios
+* Deobfuscated insecure client-side JavaScript storage
+
+#### Enumeration & Exploitation
+
+* Researched Linux privilege escalation vulnerabilities
+* Reverse engineered compiled binaries
+* Performed environment-variable based exploitation techniques
+
+### Tools & Technologies Used
+
+* Wireshark
+* Hashcat
+* Linux command-line tools
+* CyberChef
+* Google Dorks
+* Linux CLI tools for Log Analysis (wq, sed, awk, etc.)
+* DNS recon tools (Dig)
+* Zeek
+* Suricata
+* Volitility
+* Python
+* Hydra
 
 
-This script compares a known string vs a generated one using various variables this allows me to reverse a wifi password from the PSK.
